@@ -3,7 +3,6 @@
    PREMIUM BLACK + CHAMPAGNE GOLD DESIGN
 ========================================================= */
 
-/* ✅ BETULKAN URL FON GOOGLE */
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap');
 
 
@@ -204,8 +203,8 @@ textarea {
     inset: -8%;
     z-index: 0;
 
-    /* ✅ PATH BETUL untuk GitHub Pages */
-    background-image: url("./images/contoh-image-1.webp");
+    /* ✅ DIBETULKAN — sepadan dengan nama fail awak */
+    background-image: url("contohimage1.jpg");
 
     background-size: cover;
     background-position: center;
