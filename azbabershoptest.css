@@ -3,12 +3,13 @@
    PREMIUM BLACK + CHAMPAGNE GOLD DESIGN
 ========================================================= */
 
+/* ✅ BETULKAN URL FON GOOGLE */
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap');
+
 
 /* =========================================================
    ROOT
 ========================================================= */
-
 :root {
     --black: #070707;
     --black-soft: #0d0d0d;
@@ -31,10 +32,10 @@
     --transition: 0.4s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
+
 /* =========================================================
    RESET
 ========================================================= */
-
 * {
     margin: 0;
     padding: 0;
@@ -52,6 +53,8 @@ body {
     font-family: var(--font-main);
     overflow-x: hidden;
     line-height: 1.6;
+    opacity: 0;
+    transition: opacity 0.6s ease;
 }
 
 body.page-loaded {
@@ -75,10 +78,10 @@ textarea {
     font-family: inherit;
 }
 
+
 /* =========================================================
    SCROLLBAR
 ========================================================= */
-
 ::-webkit-scrollbar {
     width: 8px;
 }
@@ -96,19 +99,19 @@ textarea {
     border-radius: 20px;
 }
 
+
 /* =========================================================
    SELECTION
 ========================================================= */
-
 ::selection {
     background: var(--gold);
     color: #000;
 }
 
+
 /* =========================================================
    NAVBAR
 ========================================================= */
-
 .navbar {
     position: fixed;
     top: 0;
@@ -181,10 +184,10 @@ textarea {
     width: 100%;
 }
 
+
 /* =========================================================
    HERO
 ========================================================= */
-
 .hero {
     position: relative;
     min-height: 100vh;
@@ -201,8 +204,8 @@ textarea {
     inset: -8%;
     z-index: 0;
 
-    background-image:
-        url("./images/contoh-image-1.webp");
+    /* ✅ PATH BETUL untuk GitHub Pages */
+    background-image: url("./images/contoh-image-1.webp");
 
     background-size: cover;
     background-position: center;
@@ -256,7 +259,6 @@ textarea {
         opacity: 0;
         transform: translateY(35px);
     }
-
     to {
         opacity: 1;
         transform: translateY(0);
@@ -293,7 +295,6 @@ textarea {
 
 .hero h1 span {
     display: block;
-
     margin-top: 20px;
 
     font-family: var(--font-main);
@@ -306,7 +307,6 @@ textarea {
 
 .hero h2 {
     max-width: 520px;
-
     margin-top: 35px;
 
     color: #c7c7c7;
@@ -317,10 +317,10 @@ textarea {
     letter-spacing: 3px;
 }
 
+
 /* =========================================================
    HERO BUTTONS
 ========================================================= */
-
 .hero-buttons {
     display: flex;
     gap: 18px;
@@ -386,15 +386,14 @@ textarea {
     transform: translateY(-4px);
 }
 
+
 /* =========================================================
    HERO SIDE ELEMENTS
 ========================================================= */
-
 .hero-side-text {
     position: absolute;
     right: -55px;
     top: 50%;
-
     z-index: 4;
 
     transform: rotate(90deg);
@@ -407,7 +406,6 @@ textarea {
 .hero-info {
     position: absolute;
     z-index: 5;
-
     bottom: 70px;
 
     display: flex;
@@ -415,7 +413,6 @@ textarea {
     gap: 15px;
 
     color: #aaa;
-
     font-size: 9px;
     letter-spacing: 3px;
 }
@@ -442,7 +439,6 @@ textarea {
 .hero-bottom {
     position: absolute;
     z-index: 5;
-
     bottom: 28px;
     left: 50%;
 
@@ -453,7 +449,6 @@ textarea {
     gap: 15px;
 
     color: #777;
-
     font-size: 8px;
     letter-spacing: 3px;
 }
@@ -474,23 +469,15 @@ textarea {
 }
 
 @keyframes scrollLine {
-    0% {
-        transform: translateX(-35px);
-    }
-
-    50% {
-        transform: translateX(25px);
-    }
-
-    100% {
-        transform: translateX(60px);
-    }
+    0% { transform: translateX(-35px); }
+    50% { transform: translateX(25px); }
+    100% { transform: translateX(60px); }
 }
+
 
 /* =========================================================
    GENERAL SECTIONS
 ========================================================= */
-
 section:not(.hero) {
     position: relative;
     padding: 120px 8%;
@@ -509,7 +496,6 @@ section:not(.hero) {
 
 section h2 {
     font-family: var(--font-display);
-
     font-size: clamp(45px, 6vw, 75px);
     font-weight: 500;
     line-height: 0.95;
@@ -519,7 +505,6 @@ section h2 {
 
 .section-description {
     max-width: 550px;
-
     margin-top: 20px;
 
     color: #8c8c8c;
@@ -529,10 +514,10 @@ section h2 {
     letter-spacing: 1px;
 }
 
+
 /* =========================================================
    SERVICES
 ========================================================= */
-
 .services {
     background:
         radial-gradient(
@@ -547,15 +532,12 @@ section h2 {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 18px;
-
     margin-top: 65px;
 }
 
 .service-card {
     position: relative;
-
     min-height: 370px;
-
     padding: 38px 28px;
 
     display: flex;
@@ -587,39 +569,25 @@ section h2 {
     transform: translateY(0);
 }
 
-.service-card:nth-child(2) {
-    transition-delay: 0.12s;
-}
-
-.service-card:nth-child(3) {
-    transition-delay: 0.24s;
-}
-
-.service-card:nth-child(4) {
-    transition-delay: 0.36s;
-}
+.service-card:nth-child(2) { transition-delay: 0.12s; }
+.service-card:nth-child(3) { transition-delay: 0.24s; }
+.service-card:nth-child(4) { transition-delay: 0.36s; }
 
 .service-card::before {
     content: "";
     position: absolute;
-
     width: 150px;
     height: 150px;
-
     right: -70px;
     top: -70px;
-
     border-radius: 50%;
-
     background: rgba(214,179,106,0.08);
-
     transition: var(--transition);
 }
 
 .service-card:hover {
     transform: translateY(-10px);
     border-color: rgba(214,179,106,0.5);
-
     background:
         linear-gradient(
             145deg,
@@ -635,22 +603,17 @@ section h2 {
 .service-card h3 {
     position: relative;
     z-index: 2;
-
     font-family: var(--font-display);
     font-size: 30px;
     font-weight: 500;
-
     color: #fff;
 }
 
 .service-card p {
     position: relative;
     z-index: 2;
-
     margin-top: 18px;
-
     color: #888;
-
     font-size: 12px;
     line-height: 1.9;
 }
@@ -658,53 +621,42 @@ section h2 {
 .service-card h4 {
     position: relative;
     z-index: 2;
-
     margin-top: auto;
     margin-bottom: 25px;
-
     font-family: var(--font-display);
     font-size: 38px;
     font-weight: 500;
-
     color: var(--gold-light);
 }
+
 
 /* =========================================================
    BOOK BUTTON
 ========================================================= */
-
 .book-btn {
     position: relative;
     z-index: 2;
-
     display: block;
-
     padding: 14px;
-
     text-align: center;
-
     border: 1px solid var(--gold-dark);
-
     color: var(--gold-light);
-
     font-size: 9px;
     font-weight: 600;
     letter-spacing: 2px;
-
     transition: var(--transition);
 }
 
 .book-btn:hover {
     background: var(--gold);
     color: #080808;
-
     border-color: var(--gold);
 }
+
 
 /* =========================================================
    GALLERY
 ========================================================= */
-
 .gallery {
     background: #0b0b0b;
 }
@@ -713,20 +665,15 @@ section h2 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 18px;
-
     margin-top: 60px;
 }
 
 .gallery-item {
     position: relative;
-
     height: 470px;
-
     overflow: hidden;
-
     opacity: 0;
     transform: translateY(45px);
-
     transition:
         opacity 0.8s ease,
         transform 0.8s ease;
@@ -737,40 +684,28 @@ section h2 {
     transform: translateY(0);
 }
 
-.gallery-item:nth-child(2) {
-    transition-delay: 0.15s;
-}
-
-.gallery-item:nth-child(3) {
-    transition-delay: 0.3s;
-}
+.gallery-item:nth-child(2) { transition-delay: 0.15s; }
+.gallery-item:nth-child(3) { transition-delay: 0.3s; }
 
 .gallery-item::after {
     content: "";
-
     position: absolute;
     inset: 0;
-
     background:
         linear-gradient(
             180deg,
             transparent 55%,
             rgba(0,0,0,0.6)
         );
-
     pointer-events: none;
-
     transition: var(--transition);
 }
 
 .gallery-item img {
     width: 100%;
     height: 100%;
-
     object-fit: cover;
-
     filter: grayscale(30%);
-
     transition:
         transform 0.8s cubic-bezier(0.22, 1, 0.36, 1),
         filter 0.8s ease;
@@ -790,15 +725,14 @@ section h2 {
         );
 }
 
+
 /* =========================================================
    ABOUT
 ========================================================= */
-
 .about {
     display: grid;
     grid-template-columns: 1.1fr 0.9fr;
     gap: 100px;
-
     background:
         radial-gradient(
             circle at 80% 40%,
@@ -812,7 +746,6 @@ section h2 {
 .opening-hours {
     opacity: 0;
     transform: translateY(45px);
-
     transition:
         opacity 0.9s ease,
         transform 0.9s ease;
@@ -826,11 +759,8 @@ section h2 {
 
 .about-content > p:not(.section-title) {
     max-width: 650px;
-
     margin-top: 25px;
-
     color: #929292;
-
     font-size: 13px;
     line-height: 2;
 }
@@ -841,9 +771,7 @@ section h2 {
 
 .opening-hours {
     padding: 45px;
-
     border: 1px solid rgba(214,179,106,0.15);
-
     background:
         linear-gradient(
             145deg,
@@ -860,13 +788,9 @@ section h2 {
     display: flex;
     justify-content: space-between;
     gap: 20px;
-
     padding: 18px 0;
-
     border-bottom: 1px solid rgba(255,255,255,0.08);
-
     color: #999;
-
     font-size: 11px;
 }
 
@@ -875,13 +799,12 @@ section h2 {
     text-align: right;
 }
 
+
 /* =========================================================
    CONTACT
 ========================================================= */
-
 #contact {
     text-align: center;
-
     background:
         linear-gradient(
             180deg,
@@ -896,15 +819,12 @@ section h2 {
 
 #contact > p:not(.section-title) {
     margin-top: 20px;
-
     color: #999;
-
     font-size: 13px;
 }
 
 #contact a {
     color: var(--gold-light);
-
     transition: var(--transition);
 }
 
@@ -912,10 +832,10 @@ section h2 {
     color: #fff;
 }
 
+
 /* =========================================================
    BOOKING
 ========================================================= */
-
 .booking {
     background:
         radial-gradient(
@@ -931,13 +851,10 @@ section h2 {
     grid-template-columns: 0.8fr 1.2fr;
     gap: 100px;
     align-items: start;
-
     max-width: 1250px;
     margin: auto;
-
     opacity: 0;
     transform: translateY(45px);
-
     transition:
         opacity 0.9s ease,
         transform 0.9s ease;
@@ -950,31 +867,25 @@ section h2 {
 
 .booking-text p:not(.section-title) {
     max-width: 450px;
-
     margin-top: 30px;
-
     color: #888;
-
     font-size: 13px;
     line-height: 2;
 }
 
+
 /* =========================================================
    FORM
 ========================================================= */
-
 #bookingForm {
     padding: 45px;
-
     background:
         linear-gradient(
             145deg,
             rgba(255,255,255,0.05),
             rgba(255,255,255,0.015)
         );
-
     border: 1px solid rgba(214,179,106,0.18);
-
     box-shadow:
         0 30px 80px rgba(0,0,0,0.3);
 }
@@ -986,16 +897,12 @@ section h2 {
 
 .form-group label {
     display: block;
-
     margin-bottom: 9px;
-
     color: #999;
-
     font-size: 9px;
     font-weight: 600;
     letter-spacing: 2px;
     text-transform: uppercase;
-
     transition: var(--transition);
 }
 
@@ -1007,19 +914,12 @@ section h2 {
 .form-group select,
 .form-group textarea {
     width: 100%;
-
     padding: 15px 16px;
-
     background: rgba(0,0,0,0.35);
-
     border: 1px solid rgba(255,255,255,0.12);
-
     outline: none;
-
     color: #eee;
-
     font-size: 12px;
-
     transition:
         border-color var(--transition),
         box-shadow var(--transition),
@@ -1035,9 +935,7 @@ section h2 {
 .form-group select:focus,
 .form-group textarea:focus {
     border-color: var(--gold);
-
     background: rgba(214,179,106,0.035);
-
     box-shadow:
         0 0 0 3px rgba(214,179,106,0.05);
 }
@@ -1062,40 +960,31 @@ section h2 {
     gap: 18px;
 }
 
+
 /* =========================================================
    BOOKING BUTTON
 ========================================================= */
-
 .booking-btn {
     width: 100%;
-
     padding: 18px;
-
     margin-top: 5px;
-
     border: none;
-
     background:
         linear-gradient(
             135deg,
             var(--gold-light),
             var(--gold)
         );
-
     color: #080808;
-
     font-size: 10px;
     font-weight: 700;
     letter-spacing: 3px;
-
     cursor: pointer;
-
     transition: var(--transition);
 }
 
 .booking-btn:hover:not(:disabled) {
     transform: translateY(-3px);
-
     box-shadow:
         0 15px 35px rgba(214,179,106,0.25);
 }
@@ -1105,100 +994,36 @@ section h2 {
     cursor: wait;
 }
 
-/* =========================================================
-   FOCUS EFFECT
-========================================================= */
-
-.form-group.focused {
-    transform: translateY(-1px);
-}
-
-/* =========================================================
-   PAGE LOAD
-========================================================= */
-
-body {
-    opacity: 0;
-    transition: opacity 0.6s ease;
-}
 
 /* =========================================================
    RESPONSIVE — TABLET
 ========================================================= */
-
 @media (max-width: 1100px) {
-
-    .navbar {
-        padding: 0 4%;
-    }
-
-    .nav-links {
-        gap: 18px;
-    }
-
-    .hero {
-        padding: 0 6%;
-    }
-
-    .hero-info-left {
-        left: 6%;
-    }
-
-    .hero-info-right {
-        right: 6%;
-    }
-
-    .service-container {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .about {
-        gap: 50px;
-    }
-
-    .booking-container {
-        gap: 50px;
-    }
+    .navbar { padding: 0 4%; }
+    .nav-links { gap: 18px; }
+    .hero { padding: 0 6%; }
+    .hero-info-left { left: 6%; }
+    .hero-info-right { right: 6%; }
+    .service-container { grid-template-columns: repeat(2, 1fr); }
+    .about { gap: 50px; }
+    .booking-container { gap: 50px; }
 }
+
 
 /* =========================================================
    RESPONSIVE — MOBILE
 ========================================================= */
-
 @media (max-width: 768px) {
-
-    html {
-        scroll-padding-top: 70px;
-    }
-
-    .navbar {
-        height: 70px;
-        padding: 0 20px;
-    }
-
-    .logo {
-        font-size: 19px;
-        letter-spacing: 3px;
-    }
-
-    .nav-links {
-        gap: 14px;
-    }
-
-    .nav-links a {
-        font-size: 8px;
-        letter-spacing: 1px;
-    }
+    html { scroll-padding-top: 70px; }
+    .navbar { height: 70px; padding: 0 20px; }
+    .logo { font-size: 19px; letter-spacing: 3px; }
+    .nav-links { gap: 14px; }
+    .nav-links a { font-size: 8px; letter-spacing: 1px; }
 
     .hero {
         min-height: 760px;
         height: 100vh;
-
         padding: 0 25px;
-    }
-
-    .hero-bg {
-        background-position: center;
     }
 
     .hero-dark {
@@ -1210,206 +1035,62 @@ body {
             );
     }
 
-    .hero-content {
-        padding-top: 50px;
-    }
+    .hero-content { padding-top: 50px; }
+    .hero-label { font-size: 8px; letter-spacing: 3px; }
+    .hero-label span { width: 25px; }
+    .hero h1 { font-size: clamp(54px, 15vw, 85px); letter-spacing: -2px; }
+    .hero h1 span { margin-top: 14px; font-size: 11px; letter-spacing: 4px; line-height: 1.5; }
+    .hero h2 { max-width: 340px; margin-top: 25px; font-size: 9px; letter-spacing: 2px; }
+    .hero-buttons { flex-direction: column; align-items: flex-start; margin-top: 30px; }
+    .hero-main-btn, .hero-gallery-btn { min-width: 165px; padding: 14px 20px; }
+    .hero-side-text { display: none; }
+    .hero-info { bottom: 55px; font-size: 7px; }
+    .hero-info-right { display: none; }
+    .hero-bottom { bottom: 20px; }
 
-    .hero-label {
-        font-size: 8px;
-        letter-spacing: 3px;
-    }
+    section:not(.hero) { padding: 80px 25px; }
+    section h2 { font-size: 48px; }
+    .section-title { font-size: 8px; letter-spacing: 3px; }
+    .section-description { font-size: 11px; }
 
-    .hero-label span {
-        width: 25px;
-    }
-
-    .hero h1 {
-        font-size: clamp(54px, 15vw, 85px);
-        letter-spacing: -2px;
-    }
-
-    .hero h1 span {
-        margin-top: 14px;
-
-        font-size: 11px;
-        letter-spacing: 4px;
-        line-height: 1.5;
-    }
-
-    .hero h2 {
-        max-width: 340px;
-
-        margin-top: 25px;
-
-        font-size: 9px;
-        letter-spacing: 2px;
-    }
-
-    .hero-buttons {
-        flex-direction: column;
-        align-items: flex-start;
-
-        margin-top: 30px;
-    }
-
-    .hero-main-btn,
-    .hero-gallery-btn {
-        min-width: 165px;
-        padding: 14px 20px;
-    }
-
-    .hero-side-text {
-        display: none;
-    }
-
-    .hero-info {
-        bottom: 55px;
-        font-size: 7px;
-    }
-
-    .hero-info-right {
-        display: none;
-    }
-
-    .hero-bottom {
-        bottom: 20px;
-    }
-
-    section:not(.hero) {
-        padding: 80px 25px;
-    }
-
-    section h2 {
-        font-size: 48px;
-    }
-
-    .section-title {
-        font-size: 8px;
-        letter-spacing: 3px;
-    }
-
-    .section-description {
-        font-size: 11px;
-    }
-
-    .service-container {
-        grid-template-columns: 1fr;
-        margin-top: 40px;
-    }
-
-    .service-card {
-        min-height: 340px;
-    }
-
-    .gallery-container {
-        grid-template-columns: 1fr;
-        margin-top: 40px;
-    }
-
-    .gallery-item {
-        height: 400px;
-    }
-
-    .about {
-        grid-template-columns: 1fr;
-        gap: 50px;
-    }
-
-    .opening-hours {
-        padding: 30px 22px;
-    }
-
-    .hours div {
-        font-size: 9px;
-    }
-
-    #contact {
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-
-    .booking-container {
-        grid-template-columns: 1fr;
-        gap: 45px;
-    }
-
-    #bookingForm {
-        padding: 25px 20px;
-    }
-
-    .form-row {
-        grid-template-columns: 1fr;
-        gap: 0;
-    }
+    .service-container { grid-template-columns: 1fr; margin-top: 40px; }
+    .service-card { min-height: 340px; }
+    .gallery-container { grid-template-columns: 1fr; margin-top: 40px; }
+    .gallery-item { height: 400px; }
+    .about { grid-template-columns: 1fr; gap: 50px; }
+    .opening-hours { padding: 30px 22px; }
+    .hours div { font-size: 9px; }
+    #contact { padding-left: 20px; padding-right: 20px; }
+    .booking-container { grid-template-columns: 1fr; gap: 45px; }
+    #bookingForm { padding: 25px 20px; }
+    .form-row { grid-template-columns: 1fr; gap: 0; }
 }
+
 
 /* =========================================================
    SMALL MOBILE
 ========================================================= */
-
 @media (max-width: 480px) {
-
-    .navbar {
-        padding: 0 15px;
-    }
-
-    .logo {
-        font-size: 16px;
-    }
-
-    .nav-links {
-        gap: 9px;
-    }
-
-    .nav-links a {
-        font-size: 7px;
-        letter-spacing: 0.5px;
-    }
-
-    .hero {
-        padding: 0 20px;
-    }
-
-    .hero h1 {
-        font-size: 52px;
-    }
-
-    .hero h1 span {
-        font-size: 9px;
-        letter-spacing: 3px;
-    }
-
-    .hero h2 {
-        font-size: 8px;
-    }
-
-    .hero-info-left {
-        left: 20px;
-    }
-
-    section:not(.hero) {
-        padding: 70px 20px;
-    }
-
-    section h2 {
-        font-size: 42px;
-    }
-
-    .gallery-item {
-        height: 350px;
-    }
-
-    .service-card {
-        padding: 30px 23px;
-    }
+    .navbar { padding: 0 15px; }
+    .logo { font-size: 16px; }
+    .nav-links { gap: 9px; }
+    .nav-links a { font-size: 7px; letter-spacing: 0.5px; }
+    .hero { padding: 0 20px; }
+    .hero h1 { font-size: 52px; }
+    .hero h1 span { font-size: 9px; letter-spacing: 3px; }
+    .hero h2 { font-size: 8px; }
+    .hero-info-left { left: 20px; }
+    section:not(.hero) { padding: 70px 20px; }
+    section h2 { font-size: 42px; }
+    .gallery-item { height: 350px; }
+    .service-card { padding: 30px 23px; }
 }
+
 
 /* =========================================================
    REDUCED MOTION
 ========================================================= */
-
 @media (prefers-reduced-motion: reduce) {
-
     *,
     *::before,
     *::after {
@@ -1418,11 +1099,7 @@ body {
         scroll-behavior: auto !important;
         transition-duration: 0.01ms !important;
     }
-
-    body {
-        opacity: 1;
-    }
-
+    body { opacity: 1; }
     .service-card,
     .gallery-item,
     .about-content,
