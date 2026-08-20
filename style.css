@@ -203,8 +203,8 @@ textarea {
     inset: -8%;
     z-index: 0;
 
-    /* ✅ DIBETULKAN — sepadan dengan nama fail awak */
-    background-image: url("contohimage1.jpg");
+    /* ✅ NAMA GAMBAR BETUL SAMA DENGAN GITHUB */
+    background-image: url("contoh-image-1.jpg.webp");
 
     background-size: cover;
     background-position: center;
